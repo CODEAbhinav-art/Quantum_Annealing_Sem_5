@@ -1,0 +1,66 @@
+{
+  "notebook_version": "v4",
+  "python_version": "3.12.12",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cpu": "Intel64 Family 6 Model 143 Stepping 8, GenuineIntel",
+  "ram_gb": 127.65,
+  "openjij_version": "0.12.2",
+  "n_platforms": 6,
+  "clearance_min_assumption": 5,
+  "train_counts": [
+    8,
+    10,
+    12
+  ],
+  "delay_levels_min": [
+    5,
+    10,
+    15
+  ],
+  "dataset_seeds": [
+    11,
+    22,
+    33
+  ],
+  "solver_repeats": 2,
+  "num_reads": 100,
+  "num_sweeps": 500,
+  "exact_time_limit_s": 30,
+  "greedy_restarts": 100,
+  "warm_start_perturbations_target": 3,
+  "run_28_train_benchmark": false,
+  "qubo_identity_check": {
+    "tests": 250,
+    "variables": 56,
+    "qubo_terms": 242,
+    "offset": 110.0,
+    "max_abs_error": 0.0,
+    "passed": true
+  },
+  "warm_start_api_probe": {
+    "SA": {
+      "solver": "SA",
+      "runtime_s": 0.00808590000087861,
+      "warm_start_supported": true,
+      "warm_start_note": "initial_state accepted",
+      "total_reads": 4,
+      "valid_reads": 4,
+      "feasibility_pct": 100.0,
+      "best_valid_cost": 6,
+      "mean_valid_cost": 6.0,
+      "best_valid_energy": 6.0
+    },
+    "SQA": {
+      "solver": "SQA",
+      "runtime_s": 0.019994799993583,
+      "warm_start_supported": true,
+      "warm_start_note": "initial_state accepted",
+      "total_reads": 4,
+      "valid_reads": 4,
+      "feasibility_pct": 100.0,
+      "best_valid_cost": 5,
+      "mean_valid_cost": 5.0,
+      "best_valid_energy": 5.0
+    }
+  }
+}

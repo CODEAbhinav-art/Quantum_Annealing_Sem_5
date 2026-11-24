@@ -1,0 +1,133 @@
+{
+  "notebook_version": "v10_final_encoding_and_feasibility_investigation",
+  "study_mode": "FULL",
+  "python_version": "3.12.12",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cpu": "Intel64 Family 6 Model 143 Stepping 8, GenuineIntel",
+  "ram_gb": 127.65,
+  "openjij_version": "0.12.2",
+  "n_platforms": 6,
+  "long_platform_count": 4,
+  "long_train_coach_threshold": 24,
+  "clearance_min_assumption": 5,
+  "train_counts": [
+    64,
+    256,
+    512,
+    1024,
+    2048
+  ],
+  "seeds_by_size": {
+    "64": [
+      11,
+      22,
+      33
+    ],
+    "256": [
+      11,
+      22,
+      33
+    ],
+    "512": [
+      11,
+      22
+    ],
+    "1024": [
+      11,
+      22
+    ],
+    "2048": [
+      11,
+      22
+    ]
+  },
+  "difficulty_levels": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "difficulty_config": {
+    "low": {
+      "dwell_min": 12,
+      "dwell_max": 20,
+      "delay_max_min": 3,
+      "target_utilization": 0.55,
+      "nominal_witness_probability": 0.8
+    },
+    "medium": {
+      "dwell_min": 15,
+      "dwell_max": 25,
+      "delay_max_min": 8,
+      "target_utilization": 0.7,
+      "nominal_witness_probability": 0.55
+    },
+    "high": {
+      "dwell_min": 18,
+      "dwell_max": 30,
+      "delay_max_min": 15,
+      "target_utilization": 0.84,
+      "nominal_witness_probability": 0.3
+    }
+  },
+  "dataset_count": 36,
+  "encodings": [
+    "one_hot",
+    "domain_wall"
+  ],
+  "algorithms": [
+    "SA",
+    "SQA"
+  ],
+  "encoding_penalty_rules": {
+    "one_hot": "U+1 for assignment and conflict penalties, where U is best validated feasible Greedy cost",
+    "domain_wall": "conflict=U+1; monotonicity=(U+1)*(Rmax+1)*max_conflict_degree+U+2; eligibility is structural",
+    "proof_note": "For train i, r_i forbidden 0-to-1 transitions imply indicator negative mass r_i and positive mass r_i+1. The per-edge conflict lower bound is -(Rmax+1)*(r_i+r_j); the reassignment objective is nonnegative because each individual platform indicator is at most one. The stated monotonicity penalty makes every wall-invalid state strictly more expensive than the feasible incumbent U. For wall-valid states, conflict=U+1 excludes conflicting states from the ground state."
+  },
+  "budgets": {
+    "small": {
+      "repeats": 2,
+      "num_reads": 32,
+      "num_sweeps": 300
+    },
+    "medium": {
+      "repeats": 2,
+      "num_reads": 24,
+      "num_sweeps": 250
+    },
+    "large": {
+      "repeats": 2,
+      "num_reads": 16,
+      "num_sweeps": 200
+    }
+  },
+  "repair_method": "sample-preference-guided deterministic MRV/degree greedy with bounded restarts; no witness or fallback Greedy is used",
+  "repair_restarts": 5,
+  "raw_vs_repaired": "Raw feasibility is always reported separately from repaired feasibility/cost",
+  "platform_order_probe_datasets": [
+    [
+      64,
+      "high",
+      11
+    ],
+    [
+      256,
+      "high",
+      11
+    ]
+  ],
+  "alternate_platform_orders_per_dataset": 2,
+  "expected_dataset_count": 36,
+  "planned_main_sampler_calls": 288,
+  "planned_platform_order_calls": 16,
+  "planned_total_sampler_calls": 304,
+  "actual_sampler_rows": 304,
+  "sampler_error_rows": 0,
+  "resource_skips": 0,
+  "max_qubo_variables": 16000,
+  "max_qubo_interactions": 500000,
+  "synthetic_data_notice": "All schedules, delays, nominal platforms, coach counts and conflicts are synthetic; no station-specific dataset is used.",
+  "witness_notice": "A known feasible witness is used only to validate the generator; it is never passed to either sampler or the repair decoder.",
+  "quantum_notice": "OpenJij SQA is a classical simulation, not quantum hardware.",
+  "exact_search_notice": "No exact search is run in V10 because the selected sizes start at 64; exact reference results for <=32 trains are retained from earlier versions.",
+  "interpretation_notice": "A valid QUBO ground state does not imply finite-budget SA/SQA samples are valid. Repaired results are post-processing and must not be reported as raw sampler feasibility."
+}

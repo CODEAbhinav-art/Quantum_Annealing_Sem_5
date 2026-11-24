@@ -1,0 +1,11 @@
+scenario_id,scenario_type,n_trains,long_train_count,long_platform_count,temporal_conflict_pairs,exact_status,exact_optimum_cost,exact_runtime_s,algorithm,repeat,best_valid_cost,feasibility_pct,runtime_s,hit_exact_optimum
+FIVE_LONG_TRAIN_OVERLOAD_L4,constructed_correlated_overload_stress_not_random_pilot,5,5,4,10,INFEASIBLE,,0.001720000000204891,Exact,,,,0.001720000000204891,
+FIVE_LONG_TRAIN_OVERLOAD_L4,constructed_correlated_overload_stress_not_random_pilot,5,5,4,10,INFEASIBLE,,0.001720000000204891,SA,0.0,,0.0,0.023996900010388345,
+FIVE_LONG_TRAIN_OVERLOAD_L4,constructed_correlated_overload_stress_not_random_pilot,5,5,4,10,INFEASIBLE,,0.001720000000204891,SA,1.0,,0.0,0.01795480000146199,
+FIVE_LONG_TRAIN_OVERLOAD_L4,constructed_correlated_overload_stress_not_random_pilot,5,5,4,10,INFEASIBLE,,0.001720000000204891,SQA,0.0,,0.0,0.46076109999557957,
+FIVE_LONG_TRAIN_OVERLOAD_L4,constructed_correlated_overload_stress_not_random_pilot,5,5,4,10,INFEASIBLE,,0.001720000000204891,SQA,1.0,,0.0,0.6244097000017064,
+FIVE_LONG_TRAIN_OVERLOAD_L5,constructed_correlated_overload_stress_not_random_pilot,5,5,5,10,OPTIMAL,0.0,0.00025440000172238797,Exact,,0.0,,0.00025440000172238797,
+FIVE_LONG_TRAIN_OVERLOAD_L5,constructed_correlated_overload_stress_not_random_pilot,5,5,5,10,OPTIMAL,0.0,0.00025440000172238797,SA,0.0,0.0,100.0,0.047924099999363534,True
+FIVE_LONG_TRAIN_OVERLOAD_L5,constructed_correlated_overload_stress_not_random_pilot,5,5,5,10,OPTIMAL,0.0,0.00025440000172238797,SA,1.0,4.0,100.0,0.023930399998789653,False
+FIVE_LONG_TRAIN_OVERLOAD_L5,constructed_correlated_overload_stress_not_random_pilot,5,5,5,10,OPTIMAL,0.0,0.00025440000172238797,SQA,0.0,3.0,100.0,0.5124644000025,False
+FIVE_LONG_TRAIN_OVERLOAD_L5,constructed_correlated_overload_stress_not_random_pilot,5,5,5,10,OPTIMAL,0.0,0.00025440000172238797,SQA,1.0,4.0,100.0,0.4868038999993587,False

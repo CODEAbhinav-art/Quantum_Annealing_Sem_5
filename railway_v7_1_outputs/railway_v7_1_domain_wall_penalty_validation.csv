@@ -1,0 +1,6 @@
+penalty_factor,wall_penalty,variables,states_enumerated,global_ground_energy,best_valid_energy,best_valid_cost,global_ground_state_valid,ground_state_matches_valid,accepted_for_further_testing
+0.25,2.5,10,1024,0.0,0.0,0,True,True,True
+0.5,5.0,10,1024,0.0,0.0,0,True,True,True
+0.75,7.5,10,1024,0.0,0.0,0,True,True,True
+1.0,10.0,10,1024,0.0,0.0,0,True,True,True
+1.5,15.0,10,1024,0.0,0.0,0,True,True,True

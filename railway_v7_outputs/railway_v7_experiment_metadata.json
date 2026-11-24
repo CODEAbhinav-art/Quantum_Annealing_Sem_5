@@ -1,0 +1,67 @@
+{
+  "notebook_version": "v7_generalised_encoding_benchmark",
+  "study_mode": "PILOT",
+  "python_version": "3.12.12",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cpu": "Intel64 Family 6 Model 143 Stepping 8, GenuineIntel",
+  "ram_gb": 127.65,
+  "openjij_version": "0.12.2",
+  "n_platforms": 6,
+  "long_platform_count": 4,
+  "long_train_coach_threshold": 24,
+  "clearance_min_assumption": 5,
+  "train_counts": [
+    8,
+    12,
+    16
+  ],
+  "difficulty_levels": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "difficulty_config": {
+    "low": {
+      "horizon_min": 600,
+      "dwell_min": 12,
+      "dwell_max": 20,
+      "delay_max_min": 3
+    },
+    "medium": {
+      "horizon_min": 480,
+      "dwell_min": 15,
+      "dwell_max": 25,
+      "delay_max_min": 8
+    },
+    "high": {
+      "horizon_min": 360,
+      "dwell_min": 18,
+      "dwell_max": 30,
+      "delay_max_min": 15
+    }
+  },
+  "dataset_seeds": [
+    11,
+    22,
+    33
+  ],
+  "dataset_count": 27,
+  "encodings": [
+    "one_hot",
+    "binary_aux",
+    "domain_wall"
+  ],
+  "algorithms": [
+    "SA",
+    "SQA"
+  ],
+  "solver_repeats": 2,
+  "num_reads": 50,
+  "num_sweeps": 500,
+  "qubo_identity_preview_passed": true,
+  "tiny_exhaustive_passed": true,
+  "all_dataset_qubo_identity_passed": true,
+  "synthetic_data_notice": "All train-level schedules, delays, nominal platform assignments, coach counts and conflicts are synthetic; no station-specific dataset is used.",
+  "quantum_notice": "OpenJij SQA is a classical simulation, not execution on quantum hardware.",
+  "raw_feasibility_notice": "No repair decoder is applied in the primary benchmark; only internally consistent, conflict-free decoded samples count as raw feasible."
+}

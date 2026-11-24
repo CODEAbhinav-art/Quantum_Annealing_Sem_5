@@ -1,0 +1,26 @@
+{
+  "version": "v7.1",
+  "purpose": "final encoding diagnostics before scaling benchmark",
+  "base_datasets_reused": 27,
+  "platform_permutation_probe_datasets": 3,
+  "platform_permutations_per_dataset": 4,
+  "encodings_in_permutation_probe": [
+    "one_hot",
+    "domain_wall"
+  ],
+  "algorithms": [
+    "SA",
+    "SQA"
+  ],
+  "repeats_per_condition": 2,
+  "domain_wall_penalty_factors": [
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5
+  ],
+  "penalty_selection_rule": "Only accept factors whose exhaustive tiny-instance global ground state is valid and matches the categorical optimum.",
+  "station_specific_data_used": false,
+  "quantum_notice": "OpenJij SQA is a classical simulation, not quantum hardware."
+}

@@ -1,0 +1,4 @@
+encoding,tests,max_abs_energy_error,passed,n_variables,n_linear_terms,n_quadratic_interactions,interaction_density,max_abs_coefficient,min_abs_nonzero_coefficient,offset,penalties_json
+one_hot,30,0.0,True,44,44,134,0.1416490486257928,18.0,8.0,72.0,"{""assignment"": 9.0, ""conflict"": 9.0}"
+binary_aux,30,0.0,True,112,81,354,0.05694980694980695,36.0,1.0,198.0,"{""assignment"": 9.0, ""conflict"": 9.0, ""AND/equality_link"": 9.0}"
+domain_wall,30,0.0,True,40,40,110,0.14102564102564102,1192.0,1.0,61.0,"{""conflict"": 9.0, ""eligibility"": 9.0, ""domain_wall"": 1183.0}"

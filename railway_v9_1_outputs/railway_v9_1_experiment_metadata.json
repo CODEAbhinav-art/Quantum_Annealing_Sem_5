@@ -1,0 +1,157 @@
+{
+  "notebook_version": "v9_1_generalised_methodology_validation",
+  "study_mode": "FULL",
+  "python_version": "3.12.12",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cpu": "Intel64 Family 6 Model 143 Stepping 8, GenuineIntel",
+  "ram_gb": 127.65,
+  "openjij_version": "0.12.2",
+  "n_platforms": 6,
+  "long_platform_count": 4,
+  "long_train_coach_threshold": 24,
+  "clearance_min_assumption": 5,
+  "train_counts": [
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024,
+    1536,
+    2048
+  ],
+  "seeds_by_size": {
+    "8": [
+      11,
+      22,
+      33
+    ],
+    "16": [
+      11,
+      22,
+      33
+    ],
+    "32": [
+      11,
+      22,
+      33
+    ],
+    "64": [
+      11,
+      22,
+      33
+    ],
+    "128": [
+      11,
+      22,
+      33
+    ],
+    "256": [
+      11,
+      22,
+      33
+    ],
+    "512": [
+      11,
+      22
+    ],
+    "1024": [
+      11,
+      22
+    ],
+    "1536": [
+      11,
+      22
+    ],
+    "2048": [
+      11,
+      22
+    ]
+  },
+  "difficulty_levels": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "difficulty_config": {
+    "low": {
+      "dwell_min": 12,
+      "dwell_max": 20,
+      "delay_max_min": 3,
+      "target_utilization": 0.55,
+      "nominal_witness_probability": 0.8
+    },
+    "medium": {
+      "dwell_min": 15,
+      "dwell_max": 25,
+      "delay_max_min": 8,
+      "target_utilization": 0.7,
+      "nominal_witness_probability": 0.55
+    },
+    "high": {
+      "dwell_min": 18,
+      "dwell_max": 30,
+      "delay_max_min": 15,
+      "target_utilization": 0.84,
+      "nominal_witness_probability": 0.3
+    }
+  },
+  "dataset_count": 78,
+  "encoding": "one_hot",
+  "algorithms": [
+    "SA",
+    "SQA"
+  ],
+  "greedy_baselines": [
+    "Greedy_Interval_Reserved (V9 method)",
+    "Greedy_MRV_Generic (no witness-pool reservation)"
+  ],
+  "greedy_restarts_each": 20,
+  "primary_penalty_rule": "best validated feasible Greedy cost + 1",
+  "penalty_safety_argument": "Objective is non-negative; every invalid binary state has at least one penalty unit >= lambda; a feasible assignment of cost U exists and lambda=U+1>U, so every global QUBO minimizer is feasible.",
+  "conservative_penalty_control": "N + 1",
+  "run_conservative_penalty_control": true,
+  "penalty_control_sizes": [
+    64,
+    256,
+    1024,
+    2048
+  ],
+  "budget_by_size": {
+    "small": {
+      "repeats": 3,
+      "num_reads": 40,
+      "num_sweeps": 400
+    },
+    "medium": {
+      "repeats": 3,
+      "num_reads": 30,
+      "num_sweeps": 300
+    },
+    "large": {
+      "repeats": 2,
+      "num_reads": 16,
+      "num_sweeps": 200
+    }
+  },
+  "budget_tier_rule": "small <=64; medium 65-256; large >256",
+  "exact_max_trains": 32,
+  "exact_time_limit_s": 2.0,
+  "max_qubo_variables": 16000,
+  "max_qubo_interactions": 500000,
+  "qubo_identity_all_built_passed": true,
+  "sampler_success_rows": 576,
+  "sampler_error_rows": 0,
+  "resource_skipped_datasets": 0,
+  "sampler_logging": "Explicit sample_qubo kwargs, dedicated seed, full response.info JSON, response.info.schedule when available, and before/after process RSS snapshots are saved per sampler run. beta_range/beta_schedule_type are not explicitly overridden.",
+  "synthetic_data_notice": "All train-level schedules, delays, nominal platform assignments, coach counts and conflicts are synthetic; no station-specific dataset is used.",
+  "quantum_notice": "OpenJij SQA is a classical simulation, not quantum hardware.",
+  "raw_feasibility_notice": "No repair decoder is applied; only internally valid conflict-free raw sampler samples count as feasible.",
+  "interpretation_notice": "Timeouts and resource skips are not infeasibility proofs or solver failures. Exact optimality gaps are reported only for proven OPTIMAL exact searches. Adaptive penalty guarantees valid ground states, not valid finite-budget sampler outputs.",
+  "scenario_notice": "Difficulty changes per-platform target utilisation and nominal/witness agreement probability. Observed conflict density, mean degree and maximum concurrency are exported for audit.",
+  "planned_main_sampler_calls": 420,
+  "planned_control_sampler_calls": 156,
+  "actual_sampler_rows": 576
+}

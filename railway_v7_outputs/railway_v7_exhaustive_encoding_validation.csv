@@ -1,0 +1,4 @@
+encoding,variables,enumerated_bitstrings,expected_categorical_optimum,qubo_ground_energy,number_ground_states,valid_ground_states,invalid_ground_states,ground_state_matches_categorical_optimum
+one_hot,6,64,1,1.0,4,4,0,True
+binary_aux,10,1024,1,1.0,4,4,0,True
+domain_wall,4,16,1,1.0,4,4,0,True

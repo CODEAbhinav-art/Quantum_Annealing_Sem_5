@@ -1,0 +1,25 @@
+dataset_id,algorithm,start_mode,num_reads,num_sweeps,repeat,exact_optimum_cost,warm_start_cost,best_valid_cost,optimality_gap,hit_exact_optimum,feasibility_pct,runtime_s,warm_start_supported,warm_start_note
+N10_D15_S33_L4,SA,cold,100,500,0,3,,8,5,False,100.0,0.10808879999967758,True,cold_start
+N10_D15_S33_L4,SA,warm,100,500,0,3,6.0,7,4,False,100.0,0.03836350000347011,True,initial_state accepted
+N10_D15_S33_L4,SA,cold,100,500,1,3,,7,4,False,100.0,0.04756890000135172,True,cold_start
+N10_D15_S33_L4,SA,warm,100,500,1,3,6.0,8,5,False,100.0,0.043116100001498125,True,initial_state accepted
+N10_D15_S33_L4,SQA,cold,100,500,0,3,,5,2,False,100.0,0.6108279999898514,True,cold_start
+N10_D15_S33_L4,SQA,warm,100,500,0,3,6.0,6,3,False,100.0,0.5928555000136839,True,initial_state accepted
+N10_D15_S33_L4,SQA,cold,100,500,1,3,,5,2,False,100.0,0.7381388000067091,True,cold_start
+N10_D15_S33_L4,SQA,warm,100,500,1,3,6.0,3,0,True,100.0,0.7330870000005234,True,initial_state accepted
+N10_D15_S33_L4,SA,cold,300,1000,0,3,,9,6,False,100.0,0.41679660000954755,True,cold_start
+N10_D15_S33_L4,SA,warm,300,1000,0,3,6.0,9,6,False,100.0,0.42934500001138076,True,initial_state accepted
+N10_D15_S33_L4,SA,cold,300,1000,1,3,,8,5,False,100.0,0.6689685000019381,True,cold_start
+N10_D15_S33_L4,SA,warm,300,1000,1,3,6.0,6,3,False,100.0,0.6283076999970945,True,initial_state accepted
+N10_D15_S33_L4,SQA,cold,300,1000,0,3,,4,1,False,100.0,4.236293499998283,True,cold_start
+N10_D15_S33_L4,SQA,warm,300,1000,0,3,6.0,4,1,False,100.0,3.171278000008897,True,initial_state accepted
+N10_D15_S33_L4,SQA,cold,300,1000,1,3,,5,2,False,100.0,3.0268886999983806,True,cold_start
+N10_D15_S33_L4,SQA,warm,300,1000,1,3,6.0,6,3,False,100.0,3.074910399998771,True,initial_state accepted
+N10_D15_S33_L4,SA,cold,500,2000,0,3,,7,4,False,100.0,1.0407689999992726,True,cold_start
+N10_D15_S33_L4,SA,warm,500,2000,0,3,6.0,7,4,False,100.0,1.0340389000048162,True,initial_state accepted
+N10_D15_S33_L4,SA,cold,500,2000,1,3,,7,4,False,100.0,2.134320299999672,True,cold_start
+N10_D15_S33_L4,SA,warm,500,2000,1,3,6.0,8,5,False,100.0,1.3267616999946767,True,initial_state accepted
+N10_D15_S33_L4,SQA,cold,500,2000,0,3,,5,2,False,100.0,13.307310000003781,True,cold_start
+N10_D15_S33_L4,SQA,warm,500,2000,0,3,6.0,5,2,False,100.0,9.836214800001471,True,initial_state accepted
+N10_D15_S33_L4,SQA,cold,500,2000,1,3,,5,2,False,100.0,10.655796900013229,True,cold_start
+N10_D15_S33_L4,SQA,warm,500,2000,1,3,6.0,5,2,False,100.0,11.43740070000058,True,initial_state accepted

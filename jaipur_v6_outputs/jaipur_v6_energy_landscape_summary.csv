@@ -1,0 +1,6 @@
+dataset_id,reference_source,reference_cost,reference_energy,n_variables,penalty_lambda,single_bit_flip_min_delta,single_bit_flip_median_delta,single_bit_flip_max_delta,feasible_single_train_moves,best_feasible_move_cost_delta,minimum_two_flip_path_barrier
+N20_D30_S11_L4,exact_optimum,3,3.0,112,21.0,20.0,22.0,64.0,56,0,20.0
+N20_D30_S33_L4,exact_optimum,3,3.0,112,21.0,20.0,22.0,64.0,46,0,20.0
+N24_D30_S11_L4,exact_optimum,5,5.0,136,25.0,24.0,26.0,76.0,55,0,24.0
+N28_D30_S11_L4,exact_incumbent,9,9.0,158,29.0,28.0,30.0,88.0,55,0,28.0
+N28_D30_S33_L4,exact_optimum,5,5.0,158,29.0,28.0,59.0,88.0,37,0,28.0

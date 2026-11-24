@@ -1,0 +1,5 @@
+long_platform_count,algorithm,datasets,mean_best_cost,mean_feasibility_pct,median_runtime_s,exact_optimum_mean,exact_optimal_datasets,exact_infeasible_datasets,exact_timeouts
+4,SA,3,20.666666666666668,100.0,0.1497772000002442,4.0,1,0,2
+4,SQA,3,18.75,66.66666666666667,1.9843856500010588,4.0,1,0,2
+5,SA,3,22.333333333333332,100.0,0.16569624999829102,4.0,1,0,2
+5,SQA,3,18.75,66.66666666666667,1.9614973999996437,4.0,1,0,2

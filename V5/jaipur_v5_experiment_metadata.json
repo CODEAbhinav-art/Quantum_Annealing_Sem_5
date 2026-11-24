@@ -1,0 +1,43 @@
+{
+  "notebook_version": "v5",
+  "python_version": "3.12.12",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "cpu": "Intel64 Family 6 Model 143 Stepping 8, GenuineIntel",
+  "ram_gb": 127.65,
+  "openjij_version": "0.12.2",
+  "n_platforms": 6,
+  "clearance_min_assumption": 5,
+  "long_platform_count_main": 4,
+  "long_train_coach_threshold": 24,
+  "train_counts": [
+    8,
+    12,
+    16,
+    20,
+    24,
+    28
+  ],
+  "delay_levels_min": [
+    5,
+    15,
+    30
+  ],
+  "dataset_seeds": [
+    11,
+    22,
+    33
+  ],
+  "solver_repeats": 2,
+  "num_reads": 100,
+  "num_sweeps": 1000,
+  "exact_time_limit_s_per_dataset": 2.0,
+  "greedy_restarts": 30,
+  "run_main_benchmark": true,
+  "run_capacity_sensitivity": true,
+  "run_effort_sensitivity": true,
+  "dataset_count": 54,
+  "sampler_run_count": 216,
+  "qubo_all_dataset_checks_passed": true,
+  "synthetic_data_notice": "Train-level schedules, delays, nominal platform assignments and coach counts are synthetic; historical aggregate figures only inform calibration.",
+  "quantum_notice": "OpenJij SQA is a classical simulation, not execution on quantum hardware."
+}

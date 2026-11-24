@@ -1,0 +1,6 @@
+n_trains,exact_status,datasets
+20,OPTIMAL,6
+24,INFEASIBLE,3
+24,OPTIMAL,3
+28,OPTIMAL,4
+28,TIMEOUT,2
